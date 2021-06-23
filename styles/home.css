@@ -10,12 +10,19 @@
 
 .content header {
     grid-area: header;
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img {
+    width: 16.7rem;
 }
 
 .content #bg {
     grid-area: left;
 
     background: url('/assets/illustration.svg') no-repeat top/contain;
+    background-position-x: -7rem;
 }
 
 .content main {
@@ -23,10 +30,11 @@
 
     display: flex;
     align-items: center;
+    margin-top: -5rem;
 }
 
 .content main .container {
-    width: min(36.3rem 100%);
+    width: min(36.3rem, 100%);
 }
 
 .content main .container h2 {
@@ -46,7 +54,7 @@
     padding: 1.6rem;
     margin-bottom: 2.5rem;
 
-    border: 2px solid var(--grey-blue);
+    border: .2rem solid var(--grey-blue);
 }
 
 .content main .container button, .button {
@@ -79,20 +87,69 @@ button:hover, .button:hover {
 
 .content main .container .button {
     background: var(--white);
-    border: 2px solid var(--blue);
+    border: .2rem solid var(--blue);
     color: var(--blue);
 }
 
 .content main .container .separator {
     margin-top: 2.5rem;
-
 }
 
-.content header {
-    width: 80%;
-    margin: 3.5rem auto;
+/* SEPARATOR LINES */
+
+.separators {
+    display: flex;
+    align-items: center;
+
+    margin: 2.3rem 0 1.5rem;
 }
 
-.content header img {
-    width: 16.7rem;
+.separators div:nth-child(1),
+.separators div:nth-child(3) {
+    background: var(--grey-blue);
+    width: 100%;
+    height: 1px;
+}
+
+.separators div:nth-child(2) {
+    color: var(--grey-blue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    padding: 1.35rem;
+    line-height: 0;
+}
+
+/* Balls details */
+.content #bg .ball {
+    background: var(--blue);
+
+    position: fixed;
+    width: 21.2rem;
+    height: 21.2rem;
+
+    clip-path: circle(50% at 50% 50%);
+    
+}
+
+.content #bg .ball.top {
+    top: -61%;
+    left: 85%;
+    width: 63.3rem;
+    height: 63.3rem;
+    opacity: 0.1;
+}
+
+.content #bg .ball.bottom {
+    top: 90%;
+    bottom: 0;
+    left: 80%;
+    opacity: 0.1;
+}
+
+@media(min-width: 700px) {
+    .content {
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 11.4rem 1fr;
+    }
 }

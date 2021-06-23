@@ -21,7 +21,7 @@ html {
     --grey-light: #E5EAF1;
     --grey-medium: #D3D9E2;
     --grey-dark: #4D5E77;
-    --grey-blue: #5699FF;
+    --grey-blue: #A1B2CD;
 
     --hover-blue: #5699FF;
     --hover-red: #EA4B65;
@@ -31,6 +31,7 @@ html {
 }
 
 body{
+    display: flex;
     height: 100vh;
     background: var(--background);
 }
