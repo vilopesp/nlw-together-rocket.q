@@ -5,8 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
-:root {
+html {
     --gradient-blue: linear-gradient(195.96deg, #5498FF -122.01%, #428EFF -8.36%, #297FFF 98.4%);
     --blue: #3485FF;
     --light-blue: #E0ECFF;
@@ -28,30 +27,38 @@
     --hover-red: #EA4B65;
     --hover-grey: #8794A7;
 
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px */
 }
 
-body {
+body{
     height: 100vh;
     background: var(--background);
 }
 
-body, button, input, textarea {
+body, button, input, textarea{
     font-size: clamp(14px, 1.6rem, 2vw);
+
     font-family: 'Open Sans', sans-serif;
 }
 
-.content {
+.content{
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
+.sr-only {
     position: absolute;
-    white-space: nowrap; 
+    height: 1px;
     width: 1px;
-  }
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+input, button, .button {
+    border-radius: 1rem;
+    height: 5rem
+}
