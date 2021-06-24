@@ -1,0 +1,113 @@
+#room {
+    max-width: min(112rem, 85%);
+    /* max-width: 85%; */
+}
+
+#room header {
+     width: 100%;
+     display: flex;
+
+     align-items: center;
+     justify-content: space-between;
+}
+
+#room header .buttons {
+     display: flex;
+}
+
+#room header .buttons .button:nth-child(1) {
+    margin-right: .8rem;
+    border: 2px solid var(--blue);
+
+    padding: 1.3rem 1.6rem;
+    text-align: center;
+
+}
+
+#room header .buttons .button:nth-child(2) {
+    background: var(--blue);
+    padding: 1.3rem 3rem;
+}
+
+
+#room header .buttons .button:nth-child(1) img {
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2) img {
+    margin-right: 1rem;
+    
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ---------- FORM ---------- */
+
+#question-form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+
+    margin-bottom: 2rem;
+
+    color: var(--dark-blue);
+}
+
+#question-form form {
+    width: 108rem;
+
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+
+    border: .2rem solid var(--grey-blue);
+    border-radius: 0 .8rem .8rem;
+}
+
+#question-form form textarea {
+    width: 100%;
+    background: transparent;
+ 
+    cursor:text;
+
+    resize: none;
+    outline: none;
+}
+
+#question-form form textarea::placeholder {
+    color: var(--icons-details);
+}
+
+/* ------- FOOTER ------- */
+
+#question-form footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+#question-form footer > div {
+    display: flex;
+    align-items: center;
+
+    color: var(--icons-details);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;         
+}
+
+#question-form .footer > img {
+    margin-right: 1.2rem;
+}
+
+#question-form footer button {
+    height: auto;
+    padding: .8rem 2.4rem;
+    line-height: 2.4rem;
+}
+
+/* ------ QUESTIONS ------- */
+
