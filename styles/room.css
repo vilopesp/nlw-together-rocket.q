@@ -11,6 +11,8 @@
      justify-content: space-between;
 }
 
+/* ------ BUTTONS ------ */
+
 #room header .buttons {
      display: flex;
 }
@@ -127,7 +129,7 @@
 
 .question-wrapper .question-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .question-wrapper .question-content .user {
@@ -136,6 +138,14 @@
 
     padding: 1.4rem;
     margin-right: 1rem;
+}
+
+.question-wrapper .question-content p {
+    word-break: break-word;
+
+    display: flex;
+    align-items: center;
+    min-height: 5.2rem;
 }
 
 .question-wrapper .question-actions {
@@ -159,3 +169,14 @@
 .question-wrapper .question-actions a > img {
     margin-right: 1rem
 }
+
+/* ------ Question Read ------ */
+
+#questions .question-wrapper.read {
+    background: var(--grey-medium);
+}
+
+#questions .question-wrapper.read .user {
+    background: var(--grey-blue)
+}
+
