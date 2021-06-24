@@ -111,3 +111,51 @@
 
 /* ------ QUESTIONS ------- */
 
+#questions {
+    margin-bottom: 3rem;
+}
+
+#questions .question-wrapper {
+    background: var(--light-blue);
+    margin-bottom: 1rem;
+
+    border-radius: 0 .8rem .8rem;
+    padding: 2.4rem;
+
+    width: 108rem;
+}
+
+.question-wrapper .question-content {
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .question-content .user {
+    background-color: var(--blue);
+    clip-path: circle();
+
+    padding: 1.4rem;
+    margin-right: 1rem;
+}
+
+.question-wrapper .question-actions {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .question-actions > a {
+    display: flex;
+    align-items: center;
+
+    margin-right: 1rem;
+}
+
+.question-wrapper .question-actions > a + a {
+    margin-right: 0;
+}
+
+.question-wrapper .question-actions a > img {
+    margin-right: 1rem
+}
