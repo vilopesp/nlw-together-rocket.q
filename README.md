@@ -1,12 +1,12 @@
 <h1 align="center">
-  <img alt="Rocket.Q" title="Rocket.Q" src="/assets/logo.svg" width="220px" />
+  <img alt="Rocket.Q" title="Rocket.Q" src="public/assets/logo.svg" width="220px" />
 </h1>
 
 
 <br>
 
 <p align="center">
-  <img alt="Rocket.Q" src="/assets/Rocket_Q.png" width="100%">
+  <img alt="Rocket.Q" src="public/assets/Rocket_Q.png" width="100%">
 </p>
 
 <p align="center">
