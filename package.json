@@ -1,0 +1,27 @@
+{
+  "name": "nlw-together",
+  "version": "1.0.0",
+  "description": "Programa de perguntas e respostas anônimas onde o usuário pode respondê-las e/ou fazer perguntas ao dono da sala. Projeto desenvolvido para a semana da NLW6 (Next Level Week) - Together, desenvolvida pela Rocketseat. ",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilopesp/nlw-together-rocket.q.git"
+  },
+  "keywords": [],
+  "author": "Vitória Lopes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vilopesp/nlw-together-rocket.q/issues"
+  },
+  "homepage": "https://github.com/vilopesp/nlw-together-rocket.q#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
