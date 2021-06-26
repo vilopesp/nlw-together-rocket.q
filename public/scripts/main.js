@@ -22,6 +22,8 @@ function handleClick(event, check = true){
     event.preventDefault()
 
     const description = check ? "Tem certeza que deseja" : "excluir esta pergunta?"
+    const form = document.querySelector(".modal form")
+    form.setAttribute("action", `/room/:room/:question/:action`)
 
     modalTitle.innerHTML = check ? "Marcar como lida": "Excluir esta pergunta"
     modalDescription.innerHTML = `${description} marcar como lida esta pergunta?`
