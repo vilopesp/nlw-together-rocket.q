@@ -44,6 +44,11 @@ body, button, input, textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
+input:focus {
+    outline: none;
+    border: none;
+}
+
 .content{
     width: 100%;
     margin: 0 auto;
@@ -135,7 +140,7 @@ button.outlined, .button.outlined {
 }
 
 .button.red, .button.red {
-    background-color: var(--red);
+    background-color: var(--pink);
     color: var(--white);
 }
 
