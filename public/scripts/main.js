@@ -24,9 +24,7 @@ function handleClick(event, check = true){
     const description = check ? "Tem certeza que deseja" : "excluir esta pergunta?"
 
     modalTitle.innerHTML = check ? "Marcar como lida": "Excluir esta pergunta"
-
     modalDescription.innerHTML = `${description} marcar como lida esta pergunta?`
-
     modalButton.innerHTML = check ? "Marcar como lida" : "Sim, excluir"
 
     check ? modalButton.style.backgroundColor = "var(--blue)" : modalButton.style.backgroundColor = "var(--pink)"
